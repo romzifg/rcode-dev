@@ -1,5 +1,5 @@
-export default function Ticker({ techStack }) {
-    const doubled = [...techStack, ...techStack];
+export default function Ticker({ apps }) {
+    const doubled = [...apps, ...apps];
     return (
         <div className="overflow-hidden border-y border-white/8 bg-rcode-bg2 py-3.5">
             <div className="ticker-track">

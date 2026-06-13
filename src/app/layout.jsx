@@ -1,25 +1,24 @@
-import { DM_Sans, DM_Serif_Display, JetBrains_Mono } from 'next/font/google';
+import { Geist, Fraunces, JetBrains_Mono } from 'next/font/google';
 import '../assets/styles/globals.css';
 import '../assets/styles/style.css';
 
-const dmSans = DM_Sans({
-  variable: '--font-dm-sans',
+const geist = Geist({
+  variable: '--font-sans',
   subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  style: ['normal', 'italic'],
+  weight: ['300', '400', '500', '600'],
   display: 'swap',
 });
 
-const dmSerif = DM_Serif_Display({
-  variable: '--font-dm-serif',
+const fraunces = Fraunces({
+  variable: '--font-serif',
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['300', '400', '700'],
   style: ['normal', 'italic'],
   display: 'swap',
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  variable: '--font-jetbrains-mono',
+  variable: '--font-mono',
   subsets: ['latin'],
   weight: ['400', '500'],
   display: 'swap',
@@ -40,7 +39,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="id"
-      className={`${dmSans.variable} ${dmSerif.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${geist.variable} ${fraunces.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-rcode-bg text-rcode-white">
         {children}

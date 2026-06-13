@@ -53,19 +53,6 @@
     animation: ticker 28s linear infinite;
 }
 
-/* ── Hero grid overlay (radial-masked dot grid) ── */
-.hero-grid {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background-image:
-        linear-gradient(rgba(245, 242, 235, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(245, 242, 235, 0.05) 1px, transparent 1px);
-    background-size: 80px 80px;
-    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 20% 50%, black 20%, transparent 80%);
-    mask-image: radial-gradient(ellipse 70% 80% at 20% 50%, black 20%, transparent 80%);
-}
-
 /* ── Noise texture overlay ── */
 .noise-overlay {
     position: fixed;

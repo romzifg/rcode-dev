@@ -24,9 +24,9 @@ export const services = [
         tags: ['Notifikasi Otomatis', 'Invoice Otomatis', 'Workflow Approval'],
     },
 ];
-
 export const works = [
     {
+        id: 'kasku',
         title: 'KasKu - Sistem Manajemen Keuangan',
         cat: 'Finance App',
         desc: 'Membantu pengguna mengelola arus kas, mencatat transaksi, dan memantau kondisi keuangan secara real-time dalam satu dashboard.',
@@ -35,14 +35,11 @@ export const works = [
             'Dashboard Laporan Keuangan',
             'Pencatatan Keuangan yang Lebih Terstruktur',
         ],
-        tags: [
-            'Cash Flow',
-            'Financial Dashboard',
-            'Transaction Tracking'
-        ],
-        img: './images/KasKu.png'
+        tags: ['Cash Flow', 'Financial Dashboard', 'Transaction Tracking'],
+        img: '/images/KasKu.png',
     },
     {
+        id: 'pos-system',
         title: 'POS System',
         cat: 'Retail',
         desc: 'Sistem kasir berbasis web untuk mempercepat transaksi, mengelola stok, dan memantau penjualan secara real-time.',
@@ -51,14 +48,11 @@ export const works = [
             'Manajemen Produk & Stok',
             'Laporan Penjualan Real-time',
         ],
-        tags: [
-            'Point of Sale',
-            'Inventory Management',
-            'Sales Reporting'
-        ],
-        img: './images/POS.png'
+        tags: ['Point of Sale', 'Inventory Management', 'Sales Reporting'],
+        img: '/images/POS.png',
     },
     {
+        id: 'hris-platform',
         title: 'HRIS Platform',
         cat: 'HR Software',
         desc: 'Kelola data karyawan, absensi, cuti, dan administrasi SDM dalam satu sistem yang terintegrasi.',
@@ -67,12 +61,21 @@ export const works = [
             'Sistem Absensi & Cuti',
             'Monitoring Kehadiran dan Aktivitas',
         ],
-        tags: [
-            'HRIS',
-            'Employee Management',
-            'Attendance System'
+        tags: ['HRIS', 'Employee Management', 'Attendance System'],
+        img: '/images/HRIS.png',
+    },
+    {
+        id: 'ecommerce-platform',
+        title: 'E-Commerce Platform',
+        cat: 'E-Commerce App',
+        desc: 'Platform belanja online lengkap dengan manajemen produk, keranjang belanja, dan sistem pembayaran terintegrasi untuk bisnis skala kecil hingga menengah.',
+        features: [
+            'Manajemen Produk & Kategori',
+            'Keranjang Belanja & Checkout',
+            'Integrasi Payment Gateway',
         ],
-        img: './images/HRIS.png'
+        tags: ['E-Commerce', 'Payment Gateway', 'Product Management'],
+        img: '/images/ecommerce.png',
     },
 ];
 
@@ -99,10 +102,9 @@ export const reasons = [
     },
 ];
 
-export const techStack = [
-    'Next.js', 'React', 'Laravel', 'Tailwind CSS',
-    'MySQL', 'PostgreSQL', 'Node.js', 'REST API',
-    'Docker', 'Vercel', 'Git',
+export const apps = [
+    'Landing Page', 'Company Profile', 'Personal Website',
+    'Kasir', 'E-Commerce', 'HRIS', 'Dashboard',
 ];
 
 export const footerLinks = {

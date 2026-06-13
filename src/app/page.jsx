@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { services, works, reasons, techStack, footerLinks, stats, ctaTags, navItems, faqs, processSteps } from '../common/data';
+import { services, works, reasons, apps, footerLinks, stats, ctaTags, navItems, faqs, processSteps } from '../common/data';
 import Navbar from '@/components/layouts/Navbar';
 import HeroSection from '@/components/layouts/HeroSection';
 import CTASection from '@/components/layouts/CTASection';
@@ -29,7 +29,7 @@ export default function RCodePage() {
       <Navbar scrolled={scrolled} menuOpen={menuOpen} setMenuOpen={setMenuOpen} navItems={navItems} />
       <main>
         <HeroSection stats={stats} />
-        <Ticker techStack={techStack} />
+        <Ticker apps={apps} />
         <ServicesSection services={services} />
         <WorkSection works={works} />
         <WhySection reasons={reasons} />

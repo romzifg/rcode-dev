@@ -6,8 +6,6 @@ import { BtnAmber, BtnGhost } from "../core/Button";
 export default function HeroSection({ stats }) {
     return (
         <section className="relative min-h-screen grid md:grid-cols-2 items-center gap-16 max-w-7xl mx-auto px-6 md:px-8 pt-32 pb-20 overflow-hidden">
-            <div className="hero-grid" />
-
             <div className="relative z-10">
                 <h1 className="font-serif text-[clamp(2.2rem,4vw,3.8rem)] leading-[1.1] tracking-tight mb-8">
                     Website &amp; Sistem Aplikasi<br />
@@ -43,8 +41,7 @@ export default function HeroSection({ stats }) {
 
             {/* Mockups — hidden on mobile */}
             <div className="relative z-10 hidden md:flex items-end gap-6">
-                <img src="/images/ss_kasku.png" className="absolute -top-70 -left-10 w-32 pointer-events-none" />
-                <img src="/images/ss_pos.png" className="absolute -top-40 left-30- w-200 pointer-events-none" />
+                <img src="/images/base.png" className="absolute -top-60 left-30- w-225 pointer-events-none" />
             </div>
         </section>
     );
