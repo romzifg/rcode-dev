@@ -396,7 +396,7 @@ export default function CashflowPage() {
 							Dapatkan Cashflow →
 						</a>
 
-						<Link href="/privacy-policy" className="text-white/50 hover:text-rcode-amber text-sm transition-colors">
+						<Link href="/cashflow/privacy-policy" className="text-white/50 hover:text-rcode-amber text-sm transition-colors">
 							Baca Privacy Policy →
 						</Link>
 					</div>
