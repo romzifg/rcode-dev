@@ -24,6 +24,7 @@ export const services = [
         tags: ['Notifikasi Otomatis', 'Invoice Otomatis', 'Workflow Approval'],
     },
 ];
+
 export const works = [
     {
         id: 'kasku',
@@ -76,6 +77,47 @@ export const works = [
         ],
         tags: ['E-Commerce', 'Payment Gateway', 'Product Management'],
         img: '/images/ecommerce.png',
+    },
+
+    // NEW
+    {
+        id: 'google-sheet-pos',
+        title: 'Kasir - Google Sheets',
+        cat: 'Business Automation',
+        desc: 'Sistem kasir berbasis Google Sheets dan Apps Script yang membantu bisnis mencatat transaksi, mengelola produk, serta memantau penjualan tanpa membutuhkan aplikasi kasir khusus.',
+        features: [
+            'Input Transaksi Penjualan',
+            'Manajemen Produk & Stok',
+            'Cetak Struk Penjualan',
+            'Laporan Penjualan Otomatis',
+        ],
+        tags: [
+            'Google Sheets',
+            'Apps Script',
+            'POS',
+            'Business Automation',
+        ],
+        img: '/images/cashier_3.png',
+    },
+
+    {
+        id: 'google-sheet-cashflow',
+        title: 'Cashflow - Google Sheets',
+        cat: 'Finance & Automation',
+        desc: 'Template pencatatan keuangan berbasis Google Sheets dan Apps Script untuk membantu UMKM mencatat pemasukan, pengeluaran, dan memantau kondisi keuangan dengan lebih terstruktur.',
+        features: [
+            'Pencatatan Pemasukan & Pengeluaran',
+            'Dashboard Keuangan',
+            'Rekap Cash Flow Otomatis',
+            'Monitoring Kondisi Keuangan',
+        ],
+        tags: [
+            'Google Sheets',
+            'Apps Script',
+            'Cash Flow',
+            'Financial Dashboard',
+        ],
+        img: '/images/cashflow_1.png',
     },
 ];
 

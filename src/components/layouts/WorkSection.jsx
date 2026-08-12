@@ -1,20 +1,24 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import { MacDots } from "../core/MacDots";
 import SectionLabel from "../core/SectionLabel";
 import SectionHeading from "../core/SectionHeading";
 
+const DETAIL_ROUTES = {
+    "google-sheet-pos": "/cashier",
+    "google-sheet-cashflow": "/cashflow",
+};
+
 export default function WorkSection({ works }) {
     const [active, setActive] = useState(0);
     const current = works[active];
+    const detailHref = DETAIL_ROUTES[current.id];
 
     return (
         <section id="portofolio" className="max-w-7xl mx-auto px-6 md:px-8 py-28">
             <SectionLabel>Hasil Pengerjaan</SectionLabel>
-            <SectionHeading>
-                Portofolio
-            </SectionHeading>
+            <SectionHeading>Portofolio</SectionHeading>
 
             <div className="grid md:grid-cols-2 gap-16 mt-12 items-start">
                 {/* List */}
@@ -22,7 +26,7 @@ export default function WorkSection({ works }) {
                     {works.map((w, i) => (
                         <div
                             key={i}
-                            className={`work-item flex justify-between items-start py-6 border-t border-white/8 last:border-b last:border-white/8 cursor-pointer ${active === i ? 'active' : ''}`}
+                            className={`work-item flex justify-between items-start py-6 border-t border-white/8 last:border-b last:border-white/8 cursor-pointer ${active === i ? "active" : ""}`}
                             onMouseEnter={() => setActive(i)}
                             onClick={() => setActive(i)}
                         >
@@ -44,22 +48,16 @@ export default function WorkSection({ works }) {
                         {/* ambient glow */}
                         <div className="absolute -top-10 -right-10 w-52 h-52 rounded-full bg-rcode-amber/10 pointer-events-none blur-3xl" />
 
-                        <p className="font-mono text-[0.72rem] text-rcode-amber uppercase tracking-widest mb-2">
-                            {current.cat}
-                        </p>
+                        <p className="font-mono text-[0.72rem] text-rcode-amber uppercase tracking-widest mb-2">{current.cat}</p>
 
                         <h3 className="font-serif text-3xl mb-3">{current.title}</h3>
 
-                        <p className="text-white/60 text-[0.9rem] leading-relaxed font-light mb-6">
-                            {current.desc}
-                        </p>
+                        <p className="text-white/60 text-[0.9rem] leading-relaxed font-light mb-6">{current.desc}</p>
 
                         {/* Features */}
                         {current.features?.length > 0 && (
                             <div className="mb-6">
-                                <p className="font-mono text-[0.7rem] text-white/35 uppercase tracking-widest mb-3">
-                                    Fitur Utama
-                                </p>
+                                <p className="font-mono text-[0.7rem] text-white/35 uppercase tracking-widest mb-3">Fitur Utama</p>
 
                                 <div className="grid gap-2">
                                     {current.features.map((feature, i) => (
@@ -89,11 +87,7 @@ export default function WorkSection({ works }) {
                         {/* Preview image */}
                         {current.img ? (
                             <div className="overflow-hidden mb-6">
-                                <img
-                                    src={current.img}
-                                    alt={`${current.title} preview`}
-                                    className="w-full object-cover p-4"
-                                />
+                                <img src={current.img} alt={`${current.title} preview`} className="w-full object-cover p-4" />
                             </div>
                         ) : (
                             <div className="bg-rcode-bg3 border border-white/8 rounded-xl overflow-hidden mb-6">
@@ -115,12 +109,27 @@ export default function WorkSection({ works }) {
                             </div>
                         )}
 
-                        <a
-                            href="#kontak"
-                            className="text-rcode-amber text-[0.88rem] font-medium hover:opacity-70 transition-opacity"
-                        >
-                            Diskusi Proyek Serupa →
-                        </a>
+                        {/* CTA area */}
+                        <div className="flex flex-wrap items-center gap-3 pt-5 border-t border-white/8">
+                            {detailHref && (
+                                <a
+                                    href={detailHref}
+                                    className="group inline-flex items-center gap-1.5 bg-rcode-amber/10 border border-rcode-amber/30 text-rcode-amber text-[0.85rem] font-medium rounded-lg px-4 py-2.5 transition-colors hover:bg-rcode-amber/20 hover:border-rcode-amber/50"
+                                >
+                                    Lihat Detail
+                                    <span className="transition-transform duration-200 group-hover:translate-x-0.5">→</span>
+                                </a>
+                            )}
+
+                            <a
+                                href="#kontak"
+                                className={`inline-flex items-center gap-1.5 text-[0.85rem] font-medium transition-opacity hover:opacity-70 ${detailHref ? "text-white/60" : "text-rcode-amber"
+                                    }`}
+                            >
+                                Diskusi Proyek Serupa
+                                <span>→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
