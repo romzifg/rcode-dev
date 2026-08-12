@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-	title: "Privacy Policy — RCode.dev Cashflow",
-	description: "Kebijakan privasi penggunaan aplikasi Cashflow berbasis Google Sheets dan Google Apps Script dari RCode.dev.",
+	title: "Privacy Policy — Cashflow By RCode",
+	description: "Kebijakan privasi penggunaan aplikasi Cashflow By RCode berbasis Google Sheets dan Google Apps Script.",
 };
 
 const sections = [
@@ -10,8 +10,8 @@ const sections = [
 		id: "pendahuluan",
 		title: "Pendahuluan",
 		content: [
-			'Halaman ini menjelaskan bagaimana RCode.dev ("kami") menangani informasi ketika kamu menggunakan Cashflow — aplikasi pencatatan keuangan berbasis Google Sheets dan Google Apps Script.',
-			"Cashflow dirancang untuk membantu pengguna mencatat pemasukan dan pengeluaran, mengelola kategori transaksi, melihat saldo dan ringkasan keuangan, serta mengelola catatan keuangan bersama melalui fitur household.",
+			'Halaman ini menjelaskan bagaimana RCode ("kami") menangani informasi ketika kamu menggunakan Cashflow By RCode — aplikasi pencatatan keuangan berbasis Google Sheets dan Google Apps Script.',
+			"Cashflow By RCode dirancang untuk membantu pengguna mencatat pemasukan dan pengeluaran, mengelola kategori transaksi, melihat saldo dan ringkasan keuangan, serta mengelola catatan keuangan bersama melalui fitur household.",
 			"Dengan menggunakan aplikasi ini, kamu memahami dan menyetujui praktik yang dijelaskan dalam kebijakan privasi ini.",
 		],
 	},
@@ -20,7 +20,7 @@ const sections = [
 		id: "informasi-digunakan",
 		title: "Informasi yang Digunakan",
 		content: [
-			"Cashflow menggunakan informasi yang diperlukan untuk menjalankan fungsi aplikasi. Informasi tersebut dapat berasal dari akun Google yang digunakan untuk mengakses aplikasi maupun dari data yang kamu masukkan sendiri ke dalam aplikasi.",
+			"Cashflow By RCode menggunakan informasi yang diperlukan untuk menjalankan fungsi aplikasi. Informasi tersebut dapat berasal dari akun Google yang digunakan untuk mengakses aplikasi maupun dari data yang kamu masukkan sendiri ke dalam aplikasi.",
 		],
 		items: [
 			{
@@ -56,7 +56,7 @@ const sections = [
 		title: "Akses Akun Google & Spreadsheet",
 		highlight: true,
 		content: [
-			"Cashflow menggunakan Google Apps Script untuk menjalankan fungsi aplikasi dan Google Sheets sebagai media penyimpanan data aplikasi.",
+			"Cashflow By RCode menggunakan Google Apps Script untuk menjalankan fungsi aplikasi dan Google Sheets sebagai media penyimpanan data aplikasi.",
 			"Ketika aplikasi digunakan, Google dapat meminta izin akses sesuai dengan layanan Google yang digunakan oleh Apps Script dan konfigurasi deployment aplikasi.",
 			"Akses tersebut digunakan untuk mengenali pengguna serta membaca dan menulis data yang diperlukan pada spreadsheet tempat aplikasi dijalankan.",
 		],
@@ -77,14 +77,14 @@ const sections = [
 				reason: "Digunakan sebagai lingkungan eksekusi aplikasi untuk menjalankan fungsi seperti autentikasi pengguna, pengelolaan household, pencatatan transaksi, dan pengambilan data dashboard.",
 			},
 		],
-		footer: "Cashflow tidak menggunakan data Google untuk tujuan periklanan, penjualan data, atau profiling pengguna.",
+		footer: "Cashflow By RCode tidak menggunakan data Google untuk tujuan periklanan, penjualan data, atau profiling pengguna.",
 	},
 
 	{
 		id: "penggunaan-data",
 		title: "Bagaimana Data Digunakan",
 		content: [
-			"Data yang digunakan oleh Cashflow diperlukan untuk menjalankan fungsi aplikasi dan menyediakan fitur pencatatan serta pengelolaan keuangan.",
+			"Data yang digunakan oleh Cashflow By RCode diperlukan untuk menjalankan fungsi aplikasi dan menyediakan fitur pencatatan serta pengelolaan keuangan.",
 			"Alamat email digunakan untuk mengenali pengguna. Nama digunakan sebagai identitas pengguna. Data transaksi digunakan untuk menghitung saldo, menampilkan total pemasukan dan pengeluaran, membuat grafik tren transaksi, serta menampilkan breakdown berdasarkan kategori.",
 			"Data household digunakan untuk memungkinkan beberapa pengguna bergabung dalam satu ruang pencatatan keuangan menggunakan kode undangan.",
 			"Data kategori digunakan untuk mengelompokkan transaksi pemasukan dan pengeluaran di dalam aplikasi.",
@@ -96,7 +96,7 @@ const sections = [
 		title: "Penyimpanan & Keamanan Data",
 		content: [
 			"Data aplikasi disimpan pada Google Spreadsheet yang digunakan sebagai media penyimpanan aplikasi. Struktur data aplikasi mencakup data transaksi, pengguna, household, dan kategori.",
-			"RCode.dev tidak menyediakan database eksternal yang digunakan untuk menyimpan salinan data transaksi pengguna berdasarkan implementasi aplikasi yang saat ini tersedia.",
+			"RCode tidak menyediakan database eksternal yang digunakan untuk menyimpan salinan data transaksi pengguna berdasarkan implementasi aplikasi yang saat ini tersedia.",
 			"Kode aplikasi berjalan menggunakan Google Apps Script dan menggunakan layanan Google yang diperlukan untuk menjalankan fungsi aplikasi.",
 			"Kami berupaya menjaga agar data hanya digunakan sesuai dengan fungsi aplikasi. Namun, keamanan akun Google, spreadsheet, dan akses terhadap akun tersebut tetap menjadi tanggung jawab pengguna.",
 			"Kami menyarankan pengguna untuk menjaga keamanan akun Google, menggunakan password yang kuat, serta mengaktifkan verifikasi dua langkah.",
@@ -107,8 +107,8 @@ const sections = [
 		id: "berbagi-data",
 		title: "Berbagi Data dengan Pihak Ketiga",
 		content: [
-			"RCode.dev tidak menjual, menyewakan, atau membagikan data transaksi pengguna kepada pihak ketiga untuk tujuan komersial.",
-			"Cashflow menggunakan layanan Google seperti Google Sheets dan Google Apps Script untuk menjalankan fungsi aplikasi. Penggunaan layanan tersebut tetap tunduk pada kebijakan dan ketentuan Google yang berlaku.",
+			"RCode tidak menjual, menyewakan, atau membagikan data transaksi pengguna kepada pihak ketiga untuk tujuan komersial.",
+			"Cashflow By RCode menggunakan layanan Google seperti Google Sheets dan Google Apps Script untuk menjalankan fungsi aplikasi. Penggunaan layanan tersebut tetap tunduk pada kebijakan dan ketentuan Google yang berlaku.",
 			"Berdasarkan implementasi aplikasi yang kamu gunakan saat ini, tidak terdapat integrasi dengan layanan analytics, advertising, atau API eksternal yang menerima data transaksi pengguna.",
 		],
 	},
@@ -117,7 +117,7 @@ const sections = [
 		id: "household",
 		title: "Data Household & Berbagi Data",
 		content: [
-			"Cashflow menyediakan fitur household yang memungkinkan beberapa pengguna menggunakan satu kumpulan data keuangan bersama.",
+			"Cashflow By RCode menyediakan fitur household yang memungkinkan beberapa pengguna menggunakan satu kumpulan data keuangan bersama.",
 			"Ketika pengguna membuat household, aplikasi membuat identitas household dan kode undangan yang dapat digunakan pengguna lain untuk bergabung.",
 			"Pengguna yang tergabung dalam household dapat melihat data transaksi yang terkait dengan household tersebut melalui aplikasi.",
 		],
@@ -131,10 +131,10 @@ const sections = [
 		id: "penghapusan-transaksi",
 		title: "Penghapusan & Perubahan Data",
 		content: [
-			"Cashflow menyediakan fungsi untuk menghapus transaksi melalui aplikasi. Penghapusan transaksi akan menghapus baris transaksi terkait dari spreadsheet penyimpanan aplikasi.",
-			"Cashflow juga memiliki fungsi backend untuk memperbarui data transaksi yang sesuai dengan household pengguna.",
+			"Cashflow By RCode menyediakan fungsi untuk menghapus transaksi melalui aplikasi. Penghapusan transaksi akan menghapus baris transaksi terkait dari spreadsheet penyimpanan aplikasi.",
+			"Cashflow By RCode juga memiliki fungsi backend untuk memperbarui data transaksi yang sesuai dengan household pengguna.",
 			"Data pengguna dan household tidak memiliki fungsi penghapusan mandiri yang tersedia pada antarmuka aplikasi saat ini.",
-			"Jika kamu ingin meminta penghapusan atau perubahan data pengguna atau household yang tidak dapat dilakukan melalui aplikasi, kamu dapat menghubungi RCode.dev melalui informasi kontak yang tersedia pada halaman ini.",
+			"Jika kamu ingin meminta penghapusan atau perubahan data pengguna atau household yang tidak dapat dilakukan melalui aplikasi, kamu dapat menghubungi RCode melalui informasi kontak yang tersedia pada halaman ini.",
 		],
 	},
 
@@ -142,8 +142,8 @@ const sections = [
 		id: "retensi-data",
 		title: "Retensi Data",
 		content: [
-			"Data aplikasi disimpan selama data tersebut masih diperlukan untuk menjalankan fungsi Cashflow atau sampai pengguna menghapus data tersebut dari spreadsheet penyimpanan aplikasi.",
-			"RCode.dev tidak menyimpan salinan terpisah dari data transaksi pengguna pada server eksternal berdasarkan implementasi aplikasi saat ini.",
+			"Data aplikasi disimpan selama data tersebut masih diperlukan untuk menjalankan fungsi Cashflow By RCode atau sampai pengguna menghapus data tersebut dari spreadsheet penyimpanan aplikasi.",
+			"RCode tidak menyimpan salinan terpisah dari data transaksi pengguna pada server eksternal berdasarkan implementasi aplikasi saat ini.",
 			"Pengguna bertanggung jawab terhadap pengelolaan spreadsheet dan Google Drive yang digunakan sebagai media penyimpanan aplikasi.",
 		],
 	},
@@ -152,7 +152,7 @@ const sections = [
 		id: "hak-pengguna",
 		title: "Hak Pengguna",
 		content: [
-			"Pengguna memiliki kontrol terhadap spreadsheet dan Google Drive yang digunakan untuk menjalankan Cashflow, sesuai dengan hak akses yang dimiliki terhadap akun dan file tersebut.",
+			"Pengguna memiliki kontrol terhadap spreadsheet dan Google Drive yang digunakan untuk menjalankan Cashflow By RCode, sesuai dengan hak akses yang dimiliki terhadap akun dan file tersebut.",
 			"Pengguna dapat menghentikan penggunaan aplikasi kapan saja.",
 			"Pengguna juga dapat mencabut akses aplikasi melalui pengaturan akun Google, sesuai dengan mekanisme izin yang diberikan oleh Google.",
 		],
@@ -166,7 +166,7 @@ const sections = [
 		id: "batasan-data",
 		title: "Batasan Tanggung Jawab",
 		content: [
-			"Cashflow merupakan alat bantu pencatatan keuangan dan bukan layanan perbankan, investasi, akuntansi, atau penasihat keuangan.",
+			"Cashflow By RCode merupakan alat bantu pencatatan keuangan dan bukan layanan perbankan, investasi, akuntansi, atau penasihat keuangan.",
 			"Informasi yang ditampilkan pada dashboard berasal dari data yang dimasukkan oleh pengguna ke dalam aplikasi.",
 			"Pengguna bertanggung jawab memastikan bahwa data transaksi yang dimasukkan ke dalam aplikasi sudah benar dan sesuai dengan kebutuhan pengguna.",
 		],
@@ -186,7 +186,7 @@ const sections = [
 		id: "kontak",
 		title: "Hubungi Kami",
 		content: [
-			"Jika kamu memiliki pertanyaan mengenai kebijakan privasi, penggunaan data, keamanan, atau aplikasi Cashflow, silakan hubungi RCode.dev melalui salah satu kontak berikut:",
+			"Jika kamu memiliki pertanyaan mengenai kebijakan privasi, penggunaan data, keamanan, atau aplikasi Cashflow By RCode, silakan hubungi kami melalui salah satu kontak berikut:",
 		],
 		contact: true,
 	},
@@ -207,8 +207,11 @@ export default function PrivacyPolicyPage() {
 			{/* Navbar */}
 			<header className="fixed top-0 left-0 right-0 z-100 bg-rcode-bg/90 backdrop-blur-xl border-b border-white/8">
 				<div className="max-w-7xl mx-auto px-6 md:px-8 h-14 flex items-center justify-between">
-					<Link href="/" className="font-serif text-xl tracking-tight text-rcode-white">
-						RCode<span className="text-rcode-amber">.dev</span>
+					<Link href="/cashflow" className="flex items-center gap-2 font-serif text-xl tracking-tight text-rcode-white">
+						RCode
+						<span className="font-mono text-[0.65rem] font-normal tracking-widest uppercase text-rcode-amber border border-rcode-amber/30 rounded-full px-2 py-0.5">
+							Cashflow
+						</span>
 					</Link>
 
 					<Link href="/cashflow" className="text-white/60 hover:text-rcode-white text-sm transition-colors duration-200">
@@ -229,9 +232,9 @@ export default function PrivacyPolicyPage() {
 							<h1 className="font-serif text-[clamp(2.2rem,4.5vw,3.4rem)] leading-[1.1] tracking-tight mb-4">Privacy Policy</h1>
 
 							<p className="text-white/60 text-[1rem] leading-[1.7] font-light mb-6">
-								Berlaku untuk: <span className="text-rcode-white">Cashflow — Catatan Keuangan</span>
+								Berlaku untuk: <span className="text-rcode-white">Cashflow By RCode</span>
 								<br />
-								Produk dari RCode.dev
+								Produk dari RCode
 							</p>
 
 							<div className="flex flex-wrap gap-4 text-[0.82rem] text-white/40 font-mono">
@@ -409,7 +412,7 @@ export default function PrivacyPolicyPage() {
 						<div>
 							<p className="font-medium mb-1">Ada pertanyaan soal privasi?</p>
 
-							<p className="text-white/55 text-[0.9rem] font-light">Kami transparan tentang cara kerja Cashflow.</p>
+							<p className="text-white/55 text-[0.9rem] font-light">Kami transparan tentang cara kerja Cashflow By RCode.</p>
 						</div>
 
 						<div className="flex flex-wrap gap-3">
@@ -436,7 +439,7 @@ export default function PrivacyPolicyPage() {
 			{/* Footer */}
 			<footer className="border-t border-white/[0.07] py-8">
 				<div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-wrap justify-between gap-4 text-[0.82rem] text-white/30">
-					<span>© 2026 RCode.dev</span>
+					<span>© 2026 RCode — Cashflow By RCode</span>
 
 					<div className="flex gap-6">
 						<Link href="/cashflow" className="hover:text-rcode-amber transition-colors">
