@@ -468,7 +468,7 @@ export default function CashflowPage() {
 					<span>© 2026 RCode — Cashflow By RCode</span>
 
 					<div className="flex gap-6">
-						<Link href="/privacy-policy" className="hover:text-rcode-amber transition-colors">
+						<Link href="/cashflow/privacy-policy" className="hover:text-rcode-amber transition-colors">
 							Privacy Policy
 						</Link>
 
