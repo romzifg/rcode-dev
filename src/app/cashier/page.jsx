@@ -246,7 +246,7 @@ export default function CashierPage() {
 							</div>
 
 							<div className="relative z-10 flex justify-center gap-3 mt-5">
-								{[1, 2, 3, 4, 5].map((number) => (
+								{[1, 2, 3, 4, 5, 6, 7].map((number) => (
 									<button
 										key={number}
 										type="button"

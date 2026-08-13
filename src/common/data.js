@@ -97,7 +97,7 @@ export const works = [
             'POS',
             'Business Automation',
         ],
-        img: '/images/cashier_3.png',
+        img: '/images/cashier_4.png',
     },
 
     {
