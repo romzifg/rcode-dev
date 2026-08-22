@@ -22,7 +22,7 @@ export default function Footer({ footerLinks }) {
                                 </p>
                                 {links.map((link) => (
                                     <a
-                                        target="_blank"
+                                        {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                                         key={link.label}
                                         href={link.href}
                                         className="text-white/60 hover:text-rcode-white text-[0.9rem] font-light transition-colors duration-200"

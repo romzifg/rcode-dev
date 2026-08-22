@@ -3,7 +3,7 @@ import SectionHeading from '../core/SectionHeading';
 
 export default function WorkProcess({ processSteps }) {
     return (
-        <section id="proses" className="max-w-7xl mx-auto px-6 md:px-8 py-28">
+        <section id="proses" className="max-w-7xl mx-auto px-6 py-20 md:px-8 md:py-28">
             <div className="grid md:grid-cols-2 gap-16 items-start">
                 <div className="sticky top-24">
                     <SectionLabel>Alur Pengerjaan</SectionLabel>

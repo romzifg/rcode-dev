@@ -8,7 +8,7 @@ export default function FAQSection({ faqs }) {
     const [active, setActive] = useState(0);
 
     return (
-        <section id="faq" className="max-w-7xl mx-auto px-6 md:px-8 py-28">
+        <section id="faq" className="max-w-7xl mx-auto px-6 py-20 md:px-8 md:py-28">
             <div className="grid md:grid-cols-2 gap-16 items-start">
                 {/* Heading */}
                 <div className="sticky top-24">
@@ -36,6 +36,7 @@ export default function FAQSection({ faqs }) {
                                 <button
                                     type="button"
                                     onClick={() => setActive(isActive ? null : i)}
+                                    aria-expanded={isActive}
                                     className="w-full flex justify-between items-start gap-6 py-6 text-left group"
                                 >
                                     <div className="flex gap-4 items-start">

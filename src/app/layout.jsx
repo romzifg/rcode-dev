@@ -25,12 +25,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: 'RCode.dev — Website & Sistem Aplikasi untuk Bisnis',
+  title: 'RCode.dev — Website, Dashboard & Automasi Bisnis',
   description:
-    'Kami membantu bisnis Anda go digital dengan website modern, sistem otomatis, dan integrasi platform.',
+    'Website, dashboard, dan automasi custom untuk membantu bisnis bekerja lebih cepat, rapi, dan efisien. Konsultasi awal gratis.',
   openGraph: {
-    title: 'RCode.dev — Website & Sistem Aplikasi untuk Bisnis',
-    description: 'Website modern, sistem otomatis, integrasi platform untuk bisnis tumbuh.',
+    title: 'RCode.dev — Website, Dashboard & Automasi Bisnis',
+    description: 'Solusi digital custom untuk membuat operasional bisnis lebih cepat dan efisien. Konsultasi awal gratis.',
     type: 'website',
   },
 };

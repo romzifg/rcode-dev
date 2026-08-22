@@ -6,8 +6,8 @@ import SectionLabel from "../core/SectionLabel";
 
 export default function ServicesSection({ services }) {
     return (
-        <section id="layanan" className="max-w-7xl mx-auto px-6 md:px-8 py-28">
-            <div className="grid md:grid-cols-2 gap-12 items-end mb-16">
+        <section id="layanan" className="max-w-7xl mx-auto px-6 py-20 md:px-8 md:py-28">
+            <div className="grid md:grid-cols-2 gap-10 items-end mb-14">
                 <div>
                     <SectionLabel>Apa yang Kami Kerjakan</SectionLabel>
                     <SectionHeading>
@@ -19,23 +19,25 @@ export default function ServicesSection({ services }) {
                 </p>
             </div>
 
-            <div className="flex flex-col">
+            <div className="grid gap-4 md:grid-cols-2">
                 {services.map((s, i) => (
                     <div
                         key={i}
-                        className="service-row grid gap-8 items-start py-8 border-t border-white/8 last:border-b last:border-white/8 cursor-default"
-                        style={{ gridTemplateColumns: '60px 1fr 24px' }}
+                        className="service-card group relative min-h-70 overflow-hidden rounded-2xl border border-white/8 bg-white/2 p-7 md:p-8"
                     >
-                        <span className="font-mono text-xs text-rcode-amber pt-1">{s.number}</span>
-
-                        <div>
-                            <h3 className="font-serif text-2xl tracking-tight mb-2">{s.title}</h3>
-                            <p className="text-white/60 text-[0.95rem] leading-relaxed font-light mb-4">{s.desc}</p>
+                        <div className="absolute -right-8 -top-10 font-serif text-[8rem] leading-none text-white/2 transition-colors group-hover:text-rcode-amber/5">{s.number}</div>
+                        <div className="mb-12 flex items-center justify-between">
+                            <span className="font-mono text-xs text-rcode-amber">{s.number}</span>
+                            <span className="grid h-9 w-9 place-items-center rounded-full border border-white/10 text-white/40 transition-all group-hover:rotate-45 group-hover:border-rcode-amber/40 group-hover:text-rcode-amber">↗</span>
+                        </div>
+                        <div className="relative">
+                            <h3 className="font-serif text-2xl md:text-[1.7rem] tracking-tight mb-3">{s.title}</h3>
+                            <p className="text-white/55 text-[0.93rem] leading-relaxed font-light mb-5 max-w-lg">{s.desc}</p>
                             <div className="flex flex-wrap gap-2">
                                 {s.tags.map((t, j) => (
                                     <span
                                         key={j}
-                                        className="font-mono text-[0.72rem] text-white/60 px-2.5 py-0.5 bg-rcode-bg3 border border-white/8 rounded"
+                                        className="font-mono text-[0.67rem] text-white/45 px-2.5 py-1 bg-white/3 border border-white/8 rounded-md"
                                     >
                                         {t}
                                     </span>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MacDots } from "../core/MacDots";
 import SectionLabel from "../core/SectionLabel";
 import SectionHeading from "../core/SectionHeading";
+import Image from "next/image";
 
 const DETAIL_ROUTES = {
     "google-sheet-pos": "/cashier",
@@ -16,7 +17,7 @@ export default function WorkSection({ works }) {
     const detailHref = DETAIL_ROUTES[current.id];
 
     return (
-        <section id="portofolio" className="max-w-7xl mx-auto px-6 md:px-8 py-28">
+        <section id="portofolio" className="max-w-7xl mx-auto px-6 py-20 md:px-8 md:py-28">
             <SectionLabel>Hasil Pengerjaan</SectionLabel>
             <SectionHeading>Portofolio</SectionHeading>
 
@@ -86,8 +87,14 @@ export default function WorkSection({ works }) {
 
                         {/* Preview image */}
                         {current.img ? (
-                            <div className="overflow-hidden mb-6">
-                                <img src={current.img} alt={`${current.title} preview`} className="w-full object-cover p-4" />
+                            <div className="relative aspect-video overflow-hidden mb-6">
+                                <Image
+                                    src={current.img}
+                                    alt={`${current.title} preview`}
+                                    fill
+                                    sizes="(min-width: 768px) 45vw, 90vw"
+                                    className="object-contain p-4"
+                                />
                             </div>
                         ) : (
                             <div className="bg-rcode-bg3 border border-white/8 rounded-xl overflow-hidden mb-6">

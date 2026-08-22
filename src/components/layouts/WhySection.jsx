@@ -9,8 +9,8 @@ export default function WhySection({ reasons }) {
     return (
         <section
             id="kenapa"
-            className="py-28"
-            style={{ background: 'linear-gradient(180deg, transparent, #171714 30%, #171714 70%, transparent)' }}
+            className="py-20 md:py-28"
+            style={{ background: 'linear-gradient(180deg, transparent, #151513 24%, #151513 76%, transparent)' }}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-24 items-center">
                 <div>
@@ -28,12 +28,12 @@ export default function WhySection({ reasons }) {
                     {reasons.map((r, i) => (
                         <div
                             key={i}
-                            className="flex gap-5 items-start px-6 py-5 bg-rcode-bg border border-white/8 hover:border-rcode-amber/35 hover:bg-rcode-amber/6 rounded-xl transition-all duration-200"
+                            className="group flex gap-5 items-start px-6 py-6 bg-rcode-bg border border-white/8 hover:border-rcode-amber/30 hover:-translate-y-0.5 rounded-2xl transition-all duration-200"
                         >
-                            <span className="text-[1.4rem] shrink-0 mt-0.5">{r.icon}</span>
+                            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-rcode-amber/18 bg-rcode-amber/7 font-mono text-[0.7rem] text-rcode-amber transition-colors group-hover:bg-rcode-amber group-hover:text-rcode-bg">0{i + 1}</span>
                             <div>
-                                <p className="font-medium mb-0.5">{r.title}</p>
-                                <p className="text-white/60 text-[0.85rem] font-light">{r.desc}</p>
+                                <p className="font-medium mb-1.5">{r.title}</p>
+                                <p className="text-white/55 text-[0.87rem] leading-relaxed font-light">{r.desc}</p>
                             </div>
                         </div>
                     ))}

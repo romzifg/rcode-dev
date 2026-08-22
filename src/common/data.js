@@ -1,7 +1,7 @@
 export const services = [
     {
         number: '01',
-        title: 'Website Professional',
+        title: 'Website Profesional',
         desc: 'Website company profile, landing page, dan e-commerce yang membantu bisnis tampil profesional dan menjangkau lebih banyak pelanggan.',
         tags: ['Company Profile', 'E-commerce', 'Landing Page'],
     },
@@ -151,7 +151,7 @@ export const apps = [
 
 export const footerLinks = {
     Layanan: [
-        { label: 'Website Professional', href: '#layanan' },
+        { label: 'Website Profesional', href: '#layanan' },
         { label: 'Sistem Dashboard', href: '#layanan' },
         { label: 'Integrasi & API', href: '#layanan' },
         { label: 'Automasi Bisnis', href: '#layanan' },
@@ -165,8 +165,8 @@ export const footerLinks = {
 };
 
 export const stats = [
-    { value: '7+', label: 'Sistem & Website Dikembangkan' },
-    { value: '4+', label: 'Tahun Pengalaman' },
+    { value: '7+', label: 'Website & sistem dikembangkan' },
+    { value: '4+', label: 'Tahun pengalaman membangun solusi digital' },
 ];
 
 export const ctaTags = ['Gratis Konsultasi', 'Estimasi Jelas', 'Solusi Sesuai Kebutuhan'];
@@ -175,6 +175,7 @@ export const navItems = [
     { label: 'Layanan', href: '#layanan' },
     { label: 'Portofolio', href: '#portofolio' },
     { label: 'Kenapa Kami', href: '#kenapa' },
+    { label: 'Proses', href: '#proses' },
 ];
 
 export const faqs = [
