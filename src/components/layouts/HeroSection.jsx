@@ -53,14 +53,14 @@ export default function HeroSection({ stats }) {
                         <div className="flex gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-[#ff6b5f]" /><span className="h-2.5 w-2.5 rounded-full bg-[#f4bd4f]" /><span className="h-2.5 w-2.5 rounded-full bg-[#61c454]" /></div>
                         <span className="font-mono text-[0.62rem] uppercase tracking-[0.16em] text-white/30">Selected Works</span>
                     </div>
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#0d1424]">
+                    <div className="relative aspect-4/3 overflow-hidden rounded-2xl bg-[#0d1424]">
                         <Image
                             src="/images/base.png"
                             alt="Kumpulan website dan sistem aplikasi karya RCode.dev"
                             fill
                             priority
                             sizes="(min-width: 1024px) 48vw, 90vw"
-                            className="object-cover object-left-top"
+                            className="object-cover object-top-left"
                         />
                         <div className="absolute inset-x-0 bottom-0 h-1/3 bg-linear-to-t from-[#0d1424] to-transparent" />
                     </div>

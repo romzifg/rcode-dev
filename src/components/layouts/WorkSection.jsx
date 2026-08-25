@@ -7,6 +7,8 @@ import SectionHeading from "../core/SectionHeading";
 import Image from "next/image";
 
 const DETAIL_ROUTES = {
+    "pos-system": "/pos",
+    "hris-platform": "/hris",
     "google-sheet-pos": "/cashier",
     "google-sheet-cashflow": "/cashflow",
 };

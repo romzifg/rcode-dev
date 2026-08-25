@@ -262,9 +262,48 @@
 
 .whatsapp-float { animation: fadeInUp .5s ease-out .8s both; }
 
+.project-hero {
+    min-height: calc(100vh - 4rem);
+    display: grid;
+    align-items: center;
+}
+
+.project-frame {
+    transform: perspective(1300px) rotateY(-2.5deg) rotateX(1deg);
+    transition: transform .45s ease, border-color .3s ease;
+}
+
+.project-frame:hover {
+    transform: perspective(1300px) rotateY(0) rotateX(0) translateY(-4px);
+    border-color: rgba(232, 160, 32, .24);
+}
+
+.project-feature {
+    transition: transform .25s ease, border-color .25s ease, background .25s ease;
+}
+
+.project-feature:hover {
+    transform: translateY(-4px);
+    border-color: rgba(232, 160, 32, .22);
+    background: rgba(232, 160, 32, .035);
+}
+
+.project-shot {
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .22);
+    transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
+}
+
+.project-shot:hover {
+    transform: translateY(-4px);
+    border-color: rgba(232, 160, 32, .24);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, .32);
+}
+
 @media (max-width: 767px) {
     .hero-showcase { transform: none; }
     .float-card { animation: none; }
+    .project-hero { min-height: auto; }
+    .project-frame { transform: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

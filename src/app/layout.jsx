@@ -25,6 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://www.rcode.website'),
   title: 'RCode.dev — Website, Dashboard & Automasi Bisnis',
   description:
     'Website, dashboard, dan automasi custom untuk membantu bisnis bekerja lebih cepat, rapi, dan efisien. Konsultasi awal gratis.',
