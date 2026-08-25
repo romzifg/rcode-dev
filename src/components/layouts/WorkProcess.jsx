@@ -11,7 +11,7 @@ export default function WorkProcess({ processSteps }) {
                         Proses Kerja
                     </SectionHeading>
 
-                    <p className="text-white/60 text-[0.95rem] leading-relaxed font-light max-w-md mt-6">
+                    <p className="mt-6 max-w-md text-[0.95rem] leading-[1.75] text-white/62">
                         Setiap proyek dikerjakan dengan alur yang jelas, mulai dari memahami kebutuhan
                         hingga sistem siap digunakan.
                     </p>
@@ -28,11 +28,11 @@ export default function WorkProcess({ processSteps }) {
                             </span>
 
                             <div>
-                                <h3 className="font-serif text-2xl mb-3 group-hover:text-rcode-amber transition-colors">
+                                <h3 className="mb-3 font-sans text-xl font-semibold tracking-[-0.015em] transition-colors group-hover:text-rcode-amber md:text-[1.35rem]">
                                     {step.title}
                                 </h3>
 
-                                <p className="text-white/60 text-[0.9rem] leading-relaxed font-light max-w-xl">
+                                <p className="max-w-xl text-[0.9rem] leading-[1.7] text-white/60">
                                     {step.desc}
                                 </p>
                             </div>

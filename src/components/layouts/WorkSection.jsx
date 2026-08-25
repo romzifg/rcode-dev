@@ -19,17 +19,37 @@ export default function WorkSection({ works }) {
     const detailHref = DETAIL_ROUTES[current.id];
 
     return (
-        <section id="portofolio" className="max-w-7xl mx-auto px-6 py-20 md:px-8 md:py-28">
+        <section id="portofolio" className="max-w-7xl mx-auto px-5 py-20 sm:px-6 md:px-8 md:py-28">
             <SectionLabel>Hasil Pengerjaan</SectionLabel>
             <SectionHeading>Portofolio</SectionHeading>
 
-            <div className="grid md:grid-cols-2 gap-16 mt-12 items-start">
+            <div className="portfolio-tabs mt-10 flex snap-x snap-mandatory gap-2 overflow-x-auto pb-3 md:hidden" aria-label="Pilih proyek">
+                {works.map((work, index) => (
+                    <button
+                        key={work.id}
+                        type="button"
+                        onClick={() => setActive(index)}
+                        aria-pressed={active === index}
+                        className={`shrink-0 snap-start rounded-full border px-4 py-2.5 text-left text-[0.78rem] transition-colors ${active === index
+                            ? "border-rcode-amber/50 bg-rcode-amber/12 text-rcode-amber"
+                            : "border-white/10 bg-white/3 text-white/55"
+                            }`}
+                    >
+                        <span className="mr-2 font-mono text-[0.62rem] opacity-60">0{index + 1}</span>
+                        {work.title.split(" - ")[0]}
+                    </button>
+                ))}
+            </div>
+
+            <div className="grid gap-8 mt-5 items-start md:mt-12 md:grid-cols-2 md:gap-12 lg:gap-16">
                 {/* List */}
-                <div className="flex flex-col">
+                <div className="hidden flex-col md:flex">
                     {works.map((w, i) => (
-                        <div
-                            key={i}
-                            className={`work-item flex justify-between items-start py-6 border-t border-white/8 last:border-b last:border-white/8 cursor-pointer ${active === i ? "active" : ""}`}
+                        <button
+                            key={w.id}
+                            type="button"
+                            aria-pressed={active === i}
+                            className={`work-item flex w-full justify-between items-start py-6 border-t border-white/8 last:border-b last:border-white/8 cursor-pointer text-left ${active === i ? "active" : ""}`}
                             onMouseEnter={() => setActive(i)}
                             onClick={() => setActive(i)}
                         >
@@ -41,21 +61,66 @@ export default function WorkSection({ works }) {
                                 </div>
                             </div>
                             <span className="font-mono text-[0.72rem] text-white/30 whitespace-nowrap pt-0.5">{w.cat}</span>
-                        </div>
+                        </button>
                     ))}
                 </div>
 
                 {/* Preview card */}
-                <div className="sticky top-24">
-                    <div className="relative bg-rcode-bg2 border border-white/8 rounded-2xl p-8 overflow-hidden">
+                <div className="md:sticky md:top-24">
+                    <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-rcode-bg2 p-5 shadow-[0_24px_80px_rgba(0,0,0,.22)] sm:p-6 lg:p-8">
                         {/* ambient glow */}
                         <div className="absolute -top-10 -right-10 w-52 h-52 rounded-full bg-rcode-amber/10 pointer-events-none blur-3xl" />
 
                         <p className="font-mono text-[0.72rem] text-rcode-amber uppercase tracking-widest mb-2">{current.cat}</p>
 
-                        <h3 className="font-serif text-3xl mb-3">{current.title}</h3>
+                        <h3 className="font-serif text-[1.8rem] leading-tight mb-3 sm:text-3xl">{current.title}</h3>
 
-                        <p className="text-white/60 text-[0.9rem] leading-relaxed font-light mb-6">{current.desc}</p>
+                        <p className="text-white/60 text-[0.9rem] leading-relaxed font-light mb-5 sm:mb-6">{current.desc}</p>
+
+                        {/* Preview image */}
+                        {current.img ? (
+                            <div className="portfolio-preview mb-6 overflow-hidden rounded-xl border border-white/10 bg-rcode-bg3 shadow-[0_18px_45px_rgba(0,0,0,.25)]">
+                                <div className="flex items-center justify-between border-b border-white/8 px-3 py-2.5">
+                                    <div className="flex gap-1.5" aria-hidden="true">
+                                        <MacDots />
+                                    </div>
+                                    <span className="font-mono text-[0.58rem] uppercase tracking-[0.14em] text-white/25">Preview</span>
+                                </div>
+                                <div className={`relative ${current.imgLayout === "portrait"
+                                    ? "aspect-[4/3] sm:aspect-[3/2]"
+                                    : "aspect-[4/3] sm:aspect-video"
+                                    }`}>
+                                    <Image
+                                        src={current.img}
+                                        alt={`${current.title} preview`}
+                                        fill
+                                        sizes="(min-width: 1280px) 520px, (min-width: 768px) 45vw, calc(100vw - 72px)"
+                                        className={`transition-transform duration-500 ${current.imgLayout === "portrait"
+                                            ? "object-contain p-2.5 sm:p-3"
+                                            : "object-contain p-2 sm:p-3"
+                                            }`}
+                                    />
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="bg-rcode-bg3 border border-white/8 rounded-xl overflow-hidden mb-6">
+                                <div className="flex gap-1.5 px-3 py-2.5 border-b border-white/8">
+                                    <MacDots />
+                                </div>
+                                <div className="p-4 flex flex-col gap-3">
+                                    <div className="flex gap-2 items-end">
+                                        <div className="flex-1 h-15 rounded bg-rcode-amber/25" />
+                                        <div className="flex-1 h-6.25 rounded bg-white/10" />
+                                        <div className="flex-1 h-10 rounded bg-white/10" />
+                                    </div>
+                                    <div className="grid grid-cols-3 gap-1.5">
+                                        {[...Array(6)].map((_, i) => (
+                                            <div key={i} className="h-5 rounded bg-white/6" />
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
 
                         {/* Features */}
                         {current.features?.length > 0 && (
@@ -84,37 +149,6 @@ export default function WorkSection({ works }) {
                                         {tag}
                                     </span>
                                 ))}
-                            </div>
-                        )}
-
-                        {/* Preview image */}
-                        {current.img ? (
-                            <div className="relative aspect-video overflow-hidden mb-6">
-                                <Image
-                                    src={current.img}
-                                    alt={`${current.title} preview`}
-                                    fill
-                                    sizes="(min-width: 768px) 45vw, 90vw"
-                                    className="object-contain p-4"
-                                />
-                            </div>
-                        ) : (
-                            <div className="bg-rcode-bg3 border border-white/8 rounded-xl overflow-hidden mb-6">
-                                <div className="flex gap-1.5 px-3 py-2.5 border-b border-white/8">
-                                    <MacDots />
-                                </div>
-                                <div className="p-4 flex flex-col gap-3">
-                                    <div className="flex gap-2 items-end">
-                                        <div className="flex-1 h-15 rounded bg-rcode-amber/25" />
-                                        <div className="flex-1 h-6.25 rounded bg-white/10" />
-                                        <div className="flex-1 h-10 rounded bg-white/10" />
-                                    </div>
-                                    <div className="grid grid-cols-3 gap-1.5">
-                                        {[...Array(6)].map((_, i) => (
-                                            <div key={i} className="h-5 rounded bg-white/6" />
-                                        ))}
-                                    </div>
-                                </div>
                             </div>
                         )}
 

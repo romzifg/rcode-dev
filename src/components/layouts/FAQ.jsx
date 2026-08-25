@@ -17,7 +17,7 @@ export default function FAQSection({ faqs }) {
                         FAQ
                     </SectionHeading>
 
-                    <p className="text-white/60 text-[0.95rem] leading-relaxed font-light max-w-md mt-6">
+                    <p className="mt-6 max-w-md text-[0.95rem] leading-[1.75] text-white/62">
                         Beberapa hal yang sering ditanyakan sebelum memulai pembuatan website,
                         dashboard, atau sistem aplikasi custom.
                     </p>
@@ -45,12 +45,12 @@ export default function FAQSection({ faqs }) {
                                         </span>
 
                                         <div>
-                                            <h3 className={`font-serif text-xl transition-colors ${isActive ? 'text-rcode-amber' : 'text-white group-hover:text-rcode-amber'}`}>
+                                            <h3 className={`font-sans text-[1.02rem] font-medium leading-snug transition-colors md:text-[1.08rem] ${isActive ? 'text-rcode-amber' : 'text-white group-hover:text-rcode-amber'}`}>
                                                 {faq.question}
                                             </h3>
 
                                             {isActive && (
-                                                <p className="text-white/60 text-[0.9rem] leading-relaxed font-light mt-4 max-w-2xl">
+                                                <p className="mt-4 max-w-2xl text-[0.9rem] leading-[1.75] text-white/62">
                                                     {faq.answer}
                                                 </p>
                                             )}

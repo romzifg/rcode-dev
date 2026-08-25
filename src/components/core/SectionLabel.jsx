@@ -1,6 +1,6 @@
 export default function SectionLabel({ children }) {
     return (
-        <p className="font-mono text-xs tracking-[0.12em] uppercase text-rcode-amber mb-3">
+        <p className="mb-3 font-mono text-[0.68rem] font-medium uppercase tracking-[0.15em] text-rcode-amber">
             {children}
         </p>
     );

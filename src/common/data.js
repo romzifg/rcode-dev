@@ -2,26 +2,26 @@ export const services = [
     {
         number: '01',
         title: 'Website Profesional',
-        desc: 'Website company profile, landing page, dan e-commerce yang membantu bisnis tampil profesional dan menjangkau lebih banyak pelanggan.',
-        tags: ['Company Profile', 'E-commerce', 'Landing Page'],
+        desc: 'Website company profile, landing page, dan toko online yang cepat, responsif, serta dirancang untuk meningkatkan kepercayaan pelanggan.',
+        tags: ['Company Profile', 'Landing Page', 'Toko Online'],
     },
     {
         number: '02',
         title: 'Dashboard Monitoring Bisnis',
-        desc: 'Pantau penjualan, stok, transaksi, dan performa bisnis dalam satu dashboard.',
-        tags: ['Monitoring', 'Reporting', 'Data Visualization'],
+        desc: 'Satukan data penjualan, stok, transaksi, dan performa bisnis dalam dashboard yang mudah dipantau oleh tim.',
+        tags: ['Penjualan & Stok', 'Laporan Otomatis', 'Visualisasi Data'],
     },
     {
         number: '03',
         title: 'Integrasi Sistem Bisnis',
-        desc: 'Integrasikan website atau sistem Anda dengan payment gateway, marketplace, ERP, dan layanan pihak ketiga lainnya.',
-        tags: ['Payment Gateway', 'Marketplace', 'ERP'],
+        desc: 'Hubungkan website dan sistem internal dengan payment gateway, marketplace, ERP, atau API agar pertukaran data berjalan otomatis.',
+        tags: ['Payment Gateway', 'Marketplace', 'ERP & API'],
     },
     {
         number: '04',
         title: 'Automasi Bisnis',
-        desc: 'Kurangi kerja manual. Sistem otomatis untuk invoice, notifikasi, dan alur kerja.',
-        tags: ['Notifikasi Otomatis', 'Invoice Otomatis', 'Workflow Approval'],
+        desc: 'Otomatiskan invoice, notifikasi, laporan, dan alur persetujuan untuk mengurangi pekerjaan berulang dan human error.',
+        tags: ['Invoice', 'Notifikasi', 'Alur Persetujuan'],
     },
 ];
 
@@ -38,6 +38,7 @@ export const works = [
         ],
         tags: ['Cash Flow', 'Financial Dashboard', 'Transaction Tracking'],
         img: '/images/KasKu.png',
+        imgLayout: 'portrait',
     },
     {
         id: 'pos-system',
@@ -120,6 +121,7 @@ export const works = [
             'Financial Dashboard',
         ],
         img: '/images/cashflow_1.png',
+        imgLayout: 'portrait',
     },
 ];
 
@@ -167,7 +169,7 @@ export const footerLinks = {
 };
 
 export const stats = [
-    { value: '7+', label: 'Website & sistem dikembangkan' },
+    { value: '6+', label: 'Website & sistem dikembangkan' },
     { value: '4+', label: 'Tahun pengalaman membangun solusi digital' },
 ];
 

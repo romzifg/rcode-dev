@@ -108,6 +108,37 @@
     color: var(--color-rcode-amber);
 }
 
+.availability-dot > span {
+    box-shadow: 0 0 0 0 rgba(93, 202, 138, .38);
+    animation: availabilityPulse 2.4s ease-out infinite;
+}
+
+@keyframes availabilityPulse {
+    0% { box-shadow: 0 0 0 0 rgba(93, 202, 138, .38); }
+    55%, 100% { box-shadow: 0 0 0 7px rgba(93, 202, 138, 0); }
+}
+
+.portfolio-preview {
+    background:
+        radial-gradient(circle at 80% 20%, rgba(232, 160, 32, .09), transparent 36%),
+        linear-gradient(145deg, rgba(255, 255, 255, .035), transparent 55%),
+        var(--color-rcode-bg3);
+}
+
+.portfolio-tabs {
+    scrollbar-width: none;
+}
+
+.portfolio-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+@media (hover: hover) {
+    .portfolio-preview:hover img {
+        transform: scale(1.015);
+    }
+}
+
 /* ── Mobile nav ──────────────────────────────────────────────
    IMPORTANT: hidden by default at ALL screen sizes.
    Only shown (as a slide-in panel) below md breakpoint.
