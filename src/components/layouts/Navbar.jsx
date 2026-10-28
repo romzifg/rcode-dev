@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar({ scrolled, menuOpen, setMenuOpen, navItems }) {
     return (
@@ -14,8 +15,7 @@ export default function Navbar({ scrolled, menuOpen, setMenuOpen, navItems }) {
 
                 {/* Brand */}
                 <Link href="/" className="flex items-center gap-2.5 text-rcode-white" aria-label="RCode.dev - Beranda">
-                    <span className="grid h-9 w-9 place-items-center rounded-xl bg-rcode-amber text-sm font-bold text-rcode-bg shadow-[0_8px_24px_rgba(232,160,32,0.2)]">R</span>
-                    <span className="font-serif text-xl tracking-tight">RCode<span className="text-rcode-amber">.dev</span></span>
+                  <Image src="/rcode_white.png" width="200" height="200" alt="rcode_logo_white"/>
                 </Link>
 
                 {/* Desktop links — hidden on mobile */}

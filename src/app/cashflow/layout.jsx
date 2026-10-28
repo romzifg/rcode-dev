@@ -2,6 +2,7 @@ export const metadata = {
     title: "Cashflow By RCode — Aplikasi Catatan Keuangan Berbasis Google Sheets",
     description:
         "Cashflow By RCode adalah aplikasi pencatatan keuangan berbasis Google Sheets dan Google Apps Script. Catat pemasukan, pengeluaran, dan pantau kondisi keuangan langsung dari Google Sheets kamu.",
+    alternates: { canonical: "/cashflow" },
     openGraph: {
         title: "Cashflow By RCode",
         description:

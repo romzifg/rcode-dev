@@ -26,12 +26,35 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   metadataBase: new URL('https://www.rcode.website'),
-  title: 'RCode.dev — Website, Dashboard & Automasi Bisnis',
+  title: 'RCode.dev — Website & Sistem Bisnis oleh Romzi Farhan Ghozi',
   description:
-    'Website, dashboard, dan automasi custom untuk membantu bisnis bekerja lebih cepat, rapi, dan efisien. Konsultasi awal gratis.',
+    'Website, dashboard, sistem bisnis, dan automasi custom oleh Romzi Farhan Ghozi melalui RCode.dev.',
+  applicationName: 'RCode.dev',
+  authors: [{ name: 'Romzi Farhan Ghozi', url: 'https://www.rcode.website' }],
+  creator: 'Romzi Farhan Ghozi',
+  publisher: 'RCode.dev',
+  category: 'technology',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   openGraph: {
-    title: 'RCode.dev — Website, Dashboard & Automasi Bisnis',
-    description: 'Solusi digital custom untuk membuat operasional bisnis lebih cepat dan efisien. Konsultasi awal gratis.',
+    title: 'RCode.dev — Website & Sistem Bisnis oleh Romzi Farhan Ghozi',
+    description: 'Solusi digital custom oleh Romzi Farhan Ghozi untuk membuat operasional bisnis lebih cepat dan efisien.',
+    siteName: 'RCode.dev',
+    locale: 'id_ID',
     type: 'website',
   },
 };

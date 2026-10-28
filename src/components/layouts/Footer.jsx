@@ -36,7 +36,7 @@ export default function Footer({ footerLinks }) {
                 </div>
 
                 <div className="flex justify-between flex-wrap gap-4 pt-6 text-[0.82rem] text-white/30">
-                    <span>© {new Date().getFullYear()} RCode.dev</span>
+                    <span>© {new Date().getFullYear()} RCode.dev · Romzi Farhan Ghozi</span>
                     <span>Made with ☕ in Indonesia</span>
                 </div>
             </div>

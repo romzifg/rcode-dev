@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
 	title: "Privacy Policy — Cashflow By RCode",
+	alternates: { canonical: "/cashflow/privacy-policy" },
 	description: "Kebijakan privasi penggunaan aplikasi Cashflow By RCode berbasis Google Sheets dan Google Apps Script.",
 };
 

@@ -21,6 +21,9 @@ export default function WhySection({ reasons }) {
                     <p className="text-white/60 text-[1.05rem] leading-[1.65] font-light mt-6 mb-10">
                         Kami membantu bisnis mengurangi pekerjaan manual, mempercepat operasional, dan meningkatkan produktivitas melalui website dan sistem yang dirancang sesuai kebutuhan.
                     </p>
+                    <p className="mb-8 border-l-2 border-rcode-amber/45 pl-4 text-[0.88rem] leading-relaxed text-white/48">
+                        RCode.dev adalah studio digital independen yang dikelola oleh <strong className="font-medium text-white/70">Romzi Farhan Ghozi</strong>, web developer yang berfokus pada solusi digital untuk kebutuhan bisnis.
+                    </p>
                     <BtnAmber href="#kontak">Diskusikan Kebutuhan Anda</BtnAmber>
                 </div>
 

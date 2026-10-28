@@ -2,6 +2,7 @@ export const metadata = {
     title: "Cashier By RCode — Aplikasi Kasir (POS) Berbasis Google Sheets",
     description:
         "Cashier By RCode adalah aplikasi kasir (Point of Sale) berbasis Google Sheets dan Google Apps Script. Catat transaksi, kelola stok, dan pantau penjualan langsung dari Google Sheets kamu.",
+    alternates: { canonical: "/cashier" },
     openGraph: {
         title: "Cashier By RCode",
         description:

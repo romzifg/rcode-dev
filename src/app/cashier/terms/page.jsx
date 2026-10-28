@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
 	title: "Terms of Service — Cashier By RCode",
+	alternates: { canonical: "/cashier/terms" },
 };
 
 const sections = [

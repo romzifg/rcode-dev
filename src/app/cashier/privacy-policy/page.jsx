@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
 	title: "Privacy Policy — Cashier By RCode",
+	alternates: { canonical: "/cashier/privacy-policy" },
 };
 
 const sections = [

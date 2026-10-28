@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
     title: "Terms of Service — Cashflow By RCode",
+    alternates: { canonical: "/cashflow/terms" },
     description: "Ketentuan penggunaan layanan Cashflow By RCode.",
 };
 
